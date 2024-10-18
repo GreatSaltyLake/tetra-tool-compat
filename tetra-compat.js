@@ -29,18 +29,6 @@ BlockEvents.broken(event => {
         }
         break;
 
-        case 'minecraft:iron_ore':
-          if (fortuneLevel > 0 ? Math.floor(Math.random() * fortuneLevel) : 0) { 
-          dropItem = Item.of('minecraft:diamond', 1);
-        } else {
-          dropItem = Item.of('minecraft:diamond', 1);
-        }
-        break;
-
-        case 'minecraft:gold_ore':
-          dropItem = Item.of('minecraft:diamond_block', 1);
-          break;
-
       default:
         dropItem = null;
     }
