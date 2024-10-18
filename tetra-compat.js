@@ -1,8 +1,3 @@
-ServerEvents.tags('block', event => {
-  // Adds ores to forge:ores tag
-  event.add('forge:ores', ['roost:opal_ore' , 'acd_nether:sapphire_ore' ,  'acd_nether:ruby_ore' ,  'acd_nether:basalt_ruby_ore' , 'spelunkery:andesite_zinc_ore' , 'spelunkery:diorite_zinc_ore'  , 'spelunkery:granite_zinc_ore' , 'butcher:sulfurore' , 'aether:gravitite_ore' , 'aether_redux:veridium_ore' , 'deep_aether:skyjade_ore' , 'aether:ambrosium_ore' , 'aether:zanite_ore' , 'aethersdelight:arkenium_ore' , 'majruszsdifficulty:enderium_shard_ore'])
-})
-
 BlockEvents.broken(event => {
   const isOre = event.block.hasTag('forge:ores');
   const heldItem = event.player.mainHandItem;
